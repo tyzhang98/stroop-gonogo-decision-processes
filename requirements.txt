@@ -1,0 +1,26 @@
+# Direct Python dependencies imported by the public analysis notebooks.
+# Only HDDM and Nilearn are version-pinned because the notebooks explicitly
+# reject other versions. Other versions should be frozen after an end-to-end run.
+ipykernel
+ipython
+numpy
+pandas
+scipy
+statsmodels
+matplotlib
+seaborn
+arviz
+hddm==1.0.1
+kabuki
+nibabel
+nilearn==0.13.1
+scikit-learn
+openpyxl
+templateflow
+antspyx
+joblib
+threadpoolctl
+
+# External command-line tools invoked by the notebooks are not installed by
+# this pip requirements file: fMRIPrep 24.1.1, tedana 26.0.3, and ANTs
+# (antsApplyTransforms). Their versions and availability require separate checks.
